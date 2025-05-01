@@ -18,10 +18,6 @@ const HeroSection = () => {
               A new-age agri-market enterprise focused on building and operating regulated market yards designed for scale, transparency, and farmer-centricity.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-verdant-600 hover:bg-verdant-700 text-white text-lg py-6 px-8">
-                Our Market Yards
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
               <Button variant="outline" className="border-verdant-600 text-verdant-600 hover:bg-verdant-50 text-lg py-6 px-8">
                 Learn About Us
               </Button>
