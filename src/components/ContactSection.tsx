@@ -1,18 +1,9 @@
 
 import React from 'react';
-import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin } from "lucide-react";
 
 const ContactSection = () => {
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Form handling logic would go here
-    console.log("Form submitted");
-  };
-
   return (
     <section id="contact" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -40,7 +31,6 @@ const ContactSection = () => {
             </div>
             <h3 className="text-xl font-serif font-bold text-gray-900 mb-2">Email</h3>
             <p className="text-gray-700">krishiverdantllp@gmail.com</p>
-            <p className="text-gray-700">krishiverdantllp@gmail.com</p>
           </Card>
           
           <Card className="p-6 border-verdant-100 hover:shadow-md transition-all duration-300 text-center">
@@ -50,78 +40,6 @@ const ContactSection = () => {
             <h3 className="text-xl font-serif font-bold text-gray-900 mb-2">Address</h3>
             <p className="text-gray-700">123 Agriculture Road</p>
             <p className="text-gray-700">Nashik, Maharashtra 422001</p>
-          </Card>
-        </div>
-        
-        <div className="mt-16 max-w-4xl mx-auto">
-          <Card className="p-8 border-verdant-100">
-            <h3 className="text-2xl font-serif font-bold text-gray-900 mb-6 text-center">Send Us a Message</h3>
-            <form onSubmit={handleSubmit}>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                    Your Name
-                  </label>
-                  <Input
-                    id="name"
-                    placeholder="John Doe"
-                    className="w-full"
-                    required
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                    Email Address
-                  </label>
-                  <Input
-                    id="email"
-                    type="email"
-                    placeholder="john@example.com"
-                    className="w-full"
-                    required
-                  />
-                </div>
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-                    Phone Number
-                  </label>
-                  <Input
-                    id="phone"
-                    placeholder="+91 98765 43210"
-                    className="w-full"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
-                    Subject
-                  </label>
-                  <Input
-                    id="subject"
-                    placeholder="How can we help you?"
-                    className="w-full"
-                    required
-                  />
-                </div>
-              </div>
-              
-              <div className="mb-6">
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                  Your Message
-                </label>
-                <Textarea
-                  id="message"
-                  placeholder="Please provide details about your inquiry..."
-                  className="w-full min-h-[150px]"
-                  required
-                />
-              </div>
-              
-              <div className="text-center">
-                <Button type="submit" className="bg-verdant-600 hover:bg-verdant-700 text-white px-8 py-6">
-                  Send Message
-                </Button>
-              </div>
-            </form>
           </Card>
         </div>
       </div>
