@@ -37,8 +37,10 @@ const ContactSection = () => {
               <MapPin className="h-5 w-5 text-verdant-600" />
             </div>
             <h3 className="text-xl font-serif font-bold text-gray-900 mb-2">Address</h3>
-            <p className="text-gray-700">123 Agriculture Road</p>
-            <p className="text-gray-700">Nashik, Maharashtra 422001</p>
+            <p className="text-gray-700">Krishi Verdant LLP</p>
+            <p className="text-gray-700">Ergo Building, 13th Floor, Room No. 1306, </p>
+            <p className="text-gray-700">A-1/4 Block - EP & GP Block, Sector - V, Bidhannagar</p>
+            <p className="text-gray-700">Saltlake City, Kolkata - 700091</p>
           </Card>
         </div>
       </div>

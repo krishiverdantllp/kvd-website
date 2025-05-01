@@ -40,8 +40,9 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4">Contact Info</h3>
             <ul className="space-y-2">
-              <li className="text-gray-400">123 Agriculture Road</li>
-              <li className="text-gray-400">Nashik, Maharashtra 422001</li>
+              <li className="text-gray-400">Ergo Building, 13th Floor, Room No. 1306, </li>
+              <li className="text-gray-400">A-1/4 Block - EP & GP Block, Sector - V, Bidhannagar</li>
+              <li className="text-gray-400">Saltlake City, Kolkata - 700091</li>
               <li className="text-gray-400">Phone: +91 8106229679</li>
               <li className="text-gray-400">Email: krishiverdantllp@gmail.com</li>
             </ul>

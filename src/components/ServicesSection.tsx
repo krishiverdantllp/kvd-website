@@ -27,7 +27,7 @@ const ServicesSection = () => {
             </CardHeader>
             <CardContent>
               <p className="text-gray-700">
-                We build and operate regulated market yards designed for scale, transparency, and farmer-centricity, adhering to the Maharashtra APMC Act.
+                We build and operate regulated market yards designed for scale, transparency, and farmer-centricity, adhering to the APMC Act.
               </p>
             </CardContent>
           </Card>
@@ -112,7 +112,7 @@ const ServicesSection = () => {
             </CardHeader>
             <CardContent>
               <p className="text-gray-700">
-                Our market yards operate with a commitment to compliance and operational excellence, fully adhering to the Maharashtra APMC Act.
+                Our market yards operate with a commitment to compliance and operational excellence, fully adhering to the APMC Act.
               </p>
             </CardContent>
           </Card>

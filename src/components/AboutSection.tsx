@@ -22,7 +22,7 @@ const AboutSection = () => {
             </p>
             <h3 className="text-2xl font-serif font-bold text-gray-900 mb-4 mt-8">Our Commitment</h3>
             <p className="text-gray-700 mb-6">
-              Our market yards aim to bring modern systems and governance to traditional mandi operations while fully adhering to the Maharashtra APMC Act. In alignment with the progressive reforms under the Maharashtra Agricultural Produce Marketing (Development and Regulation) Act, M/s Krishi Verdant proposes to establish and operate private market yards at Nashik, Pune, and Solapur.
+              Our market yards aim to bring modern systems and governance to traditional mandi operations while fully adhering to the APMC Acts of the corresponding states.
             </p>
           </div>
           <div className="order-1 md:order-2">
