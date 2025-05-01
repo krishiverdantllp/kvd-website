@@ -39,8 +39,8 @@ const ContactSection = () => {
               <Mail className="h-5 w-5 text-verdant-600" />
             </div>
             <h3 className="text-xl font-serif font-bold text-gray-900 mb-2">Email</h3>
-            <p className="text-gray-700">info@krishiverdant.com</p>
-            <p className="text-gray-700">support@krishiverdant.com</p>
+            <p className="text-gray-700">krishiverdantllp@gmail.com</p>
+            <p className="text-gray-700">krishiverdantllp@gmail.com</p>
           </Card>
           
           <Card className="p-6 border-verdant-100 hover:shadow-md transition-all duration-300 text-center">

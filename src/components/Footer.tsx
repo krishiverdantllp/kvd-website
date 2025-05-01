@@ -58,7 +58,7 @@ const Footer = () => {
               <li className="text-gray-400">123 Agriculture Road</li>
               <li className="text-gray-400">Nashik, Maharashtra 422001</li>
               <li className="text-gray-400">Phone: +91 1234 567 890</li>
-              <li className="text-gray-400">Email: info@krishiverdant.com</li>
+              <li className="text-gray-400">Email: krishiverdantllp@gmail.com</li>
             </ul>
           </div>
         </div>
