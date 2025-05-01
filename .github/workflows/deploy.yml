@@ -1,37 +1,42 @@
-name: Deploy Vite → GitHub Pages
+name: Build & Deploy Vite → GitHub Pages
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main ]   # or your default branch
 
 permissions:
-  contents: write
-  pages: write
-  id-token: write
+  contents: read        # only need to read your source code
+  pages: write          # allow Pages API updates
+  id-token: write       # allow OIDC token for authentication
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with: { node-version: 18 }
-      - run: npm ci
-      - run: npm run build
-      - uses: actions/upload-artifact@v4   # optional if you split jobs
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v3
         with:
-          name: vite-dist
-          path: dist
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Vite app
+        run: npm run build
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist       # your built output folder
 
   deploy:
-    needs: build      # or skip if single‐job
+    needs: build
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
     steps:
-      - uses: actions/checkout@v3       # if you’re doing it in one job, omit
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          publish_branch: gh-pages
-          force_orphan: true
+        uses: actions/deploy-pages@v4
