@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="512" height="512" rx="100" fill="#4CAF50" />
+  
+  <!-- Market Stall Roof -->
+  <path d="M100 180 L256 100 L412 180 L412 200 L100 200 Z" fill="#8D6E63" />
+  
+  <!-- Market Stall Base -->
+  <rect x="120" y="200" width="272" height="160" fill="#FFECB3" />
+  
+  <!-- Market Stall Pillars -->
+  <rect x="120" y="200" width="20" height="160" fill="#795548" />
+  <rect x="372" y="200" width="20" height="160" fill="#795548" />
+  
+  <!-- Produce Display -->
+  <circle cx="180" cy="240" r="20" fill="#F44336" /> <!-- Apple/Tomato -->
+  <circle cx="230" cy="240" r="20" fill="#FFEB3B" /> <!-- Corn/Lemon -->
+  <circle cx="280" cy="240" r="20" fill="#FF9800" /> <!-- Orange -->
+  <circle cx="330" cy="240" r="20" fill="#8BC34A" /> <!-- Cabbage/Lettuce -->
+  
+  <!-- Baskets -->
+  <path d="M160 280 L200 280 L190 320 L170 320 Z" fill="#A1887F" />
+  <path d="M220 280 L260 280 L250 320 L230 320 Z" fill="#A1887F" />
+  <path d="M280 280 L320 280 L310 320 L290 320 Z" fill="#A1887F" />
+  
+  <!-- Ground -->
+  <rect x="80" y="360" width="352" height="52" fill="#795548" />
+</svg>
