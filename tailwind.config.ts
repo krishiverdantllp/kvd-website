@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,46 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom colors for Krishi Verdant LLP
+				'verdant': {
+					'50': '#f2fcf5',
+					'100': '#e6f9eb',
+					'200': '#bff0cd',
+					'300': '#86e0a3',
+					'400': '#4ac978',
+					'500': '#2aad5f',
+					'600': '#208f4f',
+					'700': '#1c7241',
+					'800': '#1a5c38',
+					'900': '#174c2f',
+					'950': '#0c2a1b',
+				},
+				'earth': {
+					'50': '#fbf7f0',
+					'100': '#f5ebdc',
+					'200': '#e9d3b8',
+					'300': '#dcb48d',
+					'400': '#cf9163',
+					'500': '#c47c4c',
+					'600': '#b96542',
+					'700': '#9a4f37',
+					'800': '#7d4132',
+					'900': '#67372b',
+					'950': '#381b15',
+				},
+				'crop': {
+					'50': '#f6f7ed',
+					'100': '#eaeed7',
+					'200': '#d5dcaf',
+					'300': '#bac77e',
+					'400': '#a1b156',
+					'500': '#829139',
+					'600': '#66742d',
+					'700': '#4e5826',
+					'800': '#404623',
+					'900': '#373c21',
+					'950': '#1c200e',
 				}
 			},
 			borderRadius: {
@@ -89,6 +130,15 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out'
+			},
+			fontFamily: {
+				sans: ['Inter', 'sans-serif'],
+				serif: ['Merriweather', 'serif'],
+			},
+			backgroundImage: {
+				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+				'hero-pattern': "url('/public/lovable-uploads/eb2c9830-83b6-4c57-be53-ce5fe814c3c4.png')",
+				'farm': "url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2232&q=80')",
 			}
 		}
 	},
