@@ -21,8 +21,7 @@ const ContactSection = () => {
               <Phone className="h-5 w-5 text-verdant-600" />
             </div>
             <h3 className="text-xl font-serif font-bold text-gray-900 mb-2">Phone</h3>
-            <p className="text-gray-700">+91 1234 567 890</p>
-            <p className="text-gray-700">+91 9876 543 210</p>
+            <p className="text-gray-700">+91 8106229679</p>
           </Card>
           
           <Card className="p-6 border-verdant-100 hover:shadow-md transition-all duration-300 text-center">
