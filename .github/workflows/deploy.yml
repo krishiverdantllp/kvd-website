@@ -1,29 +1,49 @@
 name: Deploy Vite → GitHub Pages
 
+# run on every push to main
 on:
   push:
     branches:
-      - main        # or your default branch
+      - main
+
+# grant just the permissions we need
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
-  build-and-deploy:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with: { node-version: 18 }
+      - run: npm ci
+      - run: npm run build
+      - uses: actions/upload-artifact@v3
+        with:
+          name: vite-dist
+          path: dist
+
+  deploy:
+    needs: build
     runs-on: ubuntu-latest
 
+    # ensure proper permissions for Pages deploy
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
+      - uses: actions/checkout@v3
+      - uses: actions/download-artifact@v3
         with:
-          node-version: 18
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build Vite project
-        run: npm run build
-
+          name: vite-dist
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
