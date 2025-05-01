@@ -14,12 +14,7 @@ const Header = () => {
     <header className="fixed w-full z-50 bg-white/95 backdrop-blur-sm shadow-sm">
       <div className="container mx-auto flex items-center justify-between p-4">
         <div className="flex items-center">
-          <img 
-            src="/lovable-uploads/eb2c9830-83b6-4c57-be53-ce5fe814c3c4.png" 
-            alt="Krishi Verdant LLP Logo" 
-            className="h-12 w-auto"
-          />
-          <span className="ml-3 text-verdant-700 font-serif font-bold text-xl hidden md:block">Krishi Verdant LLP</span>
+          <span className="text-verdant-700 font-serif font-bold text-xl">Krishi Verdant LLP</span>
         </div>
         
         {/* Desktop Navigation */}

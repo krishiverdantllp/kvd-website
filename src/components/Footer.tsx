@@ -10,11 +10,6 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="md:col-span-1">
-            <img 
-              src="/lovable-uploads/eb2c9830-83b6-4c57-be53-ce5fe814c3c4.png" 
-              alt="Krishi Verdant LLP Logo" 
-              className="h-12 w-auto mb-4 bg-white p-1 rounded"
-            />
             <h3 className="text-xl font-serif font-bold mb-3">Krishi Verdant LLP</h3>
             <p className="text-gray-400 mb-4">
               A new-age agri-market enterprise focused on building and operating regulated market yards.
