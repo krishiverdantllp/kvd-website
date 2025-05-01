@@ -1,22 +1,18 @@
-# Welcome to your Lovable project
+# Krishiv Verdant LLP Website
 
-## Project info
+## Project Info
 
-**URL**: https://lovable.dev/projects/1e668028-8e17-433b-ac33-68d559ab8f02
+**Website**: https://krishiverdant.in
 
-## How can I edit this code?
+## About
 
-There are several ways of editing your application.
+This is the official website for Krishiv Verdant LLP, a new-age agri-market enterprise focused on building and operating regulated market yards designed for scale, transparency, and farmer-centricity.
 
-**Use Lovable**
+## Development
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/1e668028-8e17-433b-ac33-68d559ab8f02) and start prompting.
+### Local Development
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+If you want to work locally using your own IDE, you can clone this repo and push changes.
 
 The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
@@ -24,10 +20,10 @@ Follow these steps:
 
 ```sh
 # Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+git clone https://github.com/krishiverdantllp/kvd-website.git
 
 # Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+cd kvd-website
 
 # Step 3: Install the necessary dependencies.
 npm i
@@ -36,38 +32,54 @@ npm i
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Deployment
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+This website is configured to automatically deploy to GitHub Pages with the custom domain krishiverdant.in when changes are pushed to the main branch.
 
-**Use GitHub Codespaces**
+### Manual Deployment
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+If you need to manually deploy the website, you can run:
 
-## What technologies are used for this project?
+```sh
+# Build the website
+npm run build
 
-This project is built with:
+# Push changes to GitHub
+git add .
+git commit -m "Your commit message"
+git push
+```
 
-- Vite
-- TypeScript
+The GitHub Actions workflow will automatically build and deploy the website to the custom domain.
+
+### Custom Domain Setup
+
+This website uses the custom domain krishiverdant.in. The domain is configured through:
+
+1. A CNAME file in the public directory
+2. GitHub Pages settings in the repository
+3. DNS configuration with your domain provider
+
+#### DNS Configuration
+
+To properly set up the custom domain, you need to configure the following DNS records with your domain provider:
+
+- Type: A records
+  - Point to GitHub Pages IP addresses:
+    - 185.199.108.153
+    - 185.199.109.153
+    - 185.199.110.153
+    - 185.199.111.153
+
+- Type: CNAME record
+  - Name: www
+  - Value: krishiverdantllp.github.io
+
+## Technologies Used
+
 - React
-- shadcn-ui
+- TypeScript
+- Vite
 - Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/1e668028-8e17-433b-ac33-68d559ab8f02) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- Shadcn UI Components
+- React Router

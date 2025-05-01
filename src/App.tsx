@@ -8,8 +8,8 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-// Get the base URL from the environment or use a default for GitHub Pages
-const basename = import.meta.env.MODE === 'production' ? '/kvd-website' : '/';
+// Use root path for custom domain
+const basename = '/';
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
