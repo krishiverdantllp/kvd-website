@@ -26,11 +26,6 @@ const Header = () => {
           <a href="#contact" className="text-gray-700 hover:text-verdant-600 font-medium">Contact</a>
         </nav>
         
-        {/* Contact Button */}
-        <Button className="hidden md:flex bg-verdant-600 hover:bg-verdant-700 text-white">
-          Get in Touch
-        </Button>
-        
         {/* Mobile Menu Button */}
         <Button 
           variant="ghost" 
@@ -52,9 +47,6 @@ const Header = () => {
               <a href="#services" className="text-gray-700 hover:text-verdant-600 py-2 font-medium" onClick={() => setIsMenuOpen(false)}>Services</a>
               <a href="#locations" className="text-gray-700 hover:text-verdant-600 py-2 font-medium" onClick={() => setIsMenuOpen(false)}>Locations</a>
               <a href="#contact" className="text-gray-700 hover:text-verdant-600 py-2 font-medium" onClick={() => setIsMenuOpen(false)}>Contact</a>
-              <Button className="w-full bg-verdant-600 hover:bg-verdant-700 text-white mt-4">
-                Get in Touch
-              </Button>
             </div>
           </div>
         </div>
